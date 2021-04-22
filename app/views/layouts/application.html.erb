@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="nav">
+      <p> <%= link_to 'Articles', articles_path %> </p>
+      <p> <%= link_to 'Create New Article', new_article_path %> </p>
+    </div>
+    <div class="container" id="articles">
+      <%= yield %>
+    </div>
   </body>
 </html>
